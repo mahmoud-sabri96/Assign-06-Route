@@ -54,7 +54,7 @@ ul {
     background-color: var(--main-color);
 }
 
-section{
+section {
     padding-top: var(--padding-section-top);
     padding-bottom: var(--padding-section-bottom);
 }
@@ -369,6 +369,23 @@ footer .copy-right p {
     margin-bottom: 5px;
 }
 
+/* ========================================>>>>> Start To Top <<<<======================================= */
+.to-top {
+    bottom: 10px;
+    background-color: #147df68d;
+
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #cde1f8;
+    transition: var(--main-transition);
+
+}
+
+.to-top:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
 
 
 
