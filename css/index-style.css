@@ -125,156 +125,6 @@ header nav li .dropdown-item:hover {
     animation: flash .4s infinite alternate-reverse ease-in-out;
 }
 
-
-.home .home-body h1:after {
-    position: absolute;
-    top: 110%;
-    left: 50%;
-    transform: translateX(-50%);
-    content: ' |';
-    animation: typingEffect 6s .3s both infinite linear;
-    color: var(--main-color);
-}
-
-@keyframes typingEffect {
-    0% {
-        content: ''
-    }
-
-    3% {
-        content: 'D|'
-    }
-
-    6% {
-        content: 'De|'
-    }
-
-    9% {
-        content: ' Des|'
-    }
-
-    12% {
-        content: ' Desi|'
-    }
-
-    12% {
-        content: ' Desig|'
-    }
-
-    14% {
-        content: ' Design|'
-    }
-
-    16% {
-        content: ' Designe|'
-    }
-
-    18% {
-        content: ' Designer.|'
-    }
-
-    27% {
-        content: ' Designe|'
-    }
-
-    29% {
-        content: ' Design|'
-    }
-
-    31% {
-        content: ' Desig|'
-    }
-
-    33% {
-        content: ' Desi|'
-    }
-
-    36% {
-        content: ' Des|'
-    }
-
-    39% {
-        content: ' De|'
-    }
-
-    42% {
-        content: 'D|'
-    }
-
-    45% {
-        content: ''
-    }
-
-    48% {
-        content: ' D|'
-    }
-
-    51% {
-        content: ' De|'
-    }
-
-    54% {
-        content: ' Dev|'
-    }
-
-    57% {
-        content: ' Deve|'
-    }
-
-    60% {
-        content: ' Devel|'
-    }
-
-    63% {
-        content: ' Develo|'
-    }
-
-    66% {
-        content: ' Develope|'
-    }
-
-    68% {
-        content: ' Developer.|'
-    }
-
-    79% {
-        content: ' Develope|'
-    }
-
-    81% {
-        content: ' Develop|'
-    }
-
-    83% {
-        content: ' Develo|'
-    }
-
-    86% {
-        content: ' Devel|'
-    }
-
-    89% {
-        content: ' Deve|'
-    }
-
-    92% {
-        content: ' Dev|'
-    }
-
-    95% {
-        content: ' De|'
-    }
-
-    98% {
-        content: ' D|'
-    }
-
-    100% {
-        content: ' '
-    }
-}
-
-
 @keyframes flash {
     0% {
         opacity: 0;
@@ -312,20 +162,21 @@ header nav li .dropdown-item:hover {
 
 /* ========================================>>>>> Start Services Section <<<<======================================= */
 .service .card {
+    width: 31%;
     border-radius: 15px;
     box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
     border: none;
 }
 
 .service-body .card-body .icon {
-    width: 80px !important;
-    height: 80px !important;
+    width: 90px !important;
+    height: 90px !important;
     border: 10px solid var(--main-color);
     border-radius: 50%;
     transition: var(--main-transition);
 }
 
-.service-body .box:hover .card-body .icon {
+.service-body .card:hover .card-body .icon {
     border: 10px solid #cde1f8;
     background-color: var(--main-color);
     color: #fff;
@@ -344,7 +195,10 @@ header nav li .dropdown-item:hover {
     background: linear-gradient(hsl(212, 100%, 50%, .7), hsl(212, 100%, 50%, .7)), url(../imgs/counters-bg\ \(1\).jpg);
     background-position: center 20%;
     background-size: cover;
-    background-attachment: fixed;
+}
+
+.status .status-box {
+    width: 30%;
 }
 
 .status .status-box p {
@@ -360,10 +214,11 @@ header nav li .dropdown-item:hover {
 /* ========================================>>>>> Start Portfolio Section <<<<======================================= */
 .portfolio .card {
     box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+    width: 31%;
 }
 
 .portfolio .card img {
-    transition: .8s;
+    transition: .7s;
     cursor: pointer;
 }
 
@@ -414,6 +269,7 @@ header nav li .dropdown-item:hover {
 /* ========================================>>>>> Start BLogs Section <<<<======================================= */
 .blog .blog-body .card {
     box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+    width: 32%;
 }
 
 .blog .blog-body .card-body p {
@@ -528,6 +384,17 @@ footer .copy-right p {
     background-color: var(--main-color);
     border-color: var(--main-color);
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ============>>>> Media Queries <<<<=========== */
